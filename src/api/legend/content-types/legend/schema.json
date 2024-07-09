@@ -59,6 +59,28 @@
       "relation": "oneToMany",
       "target": "api::blog.blog",
       "mappedBy": "legend"
+    },
+    "profilePicLarge": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "profilePicSmall": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
