@@ -362,6 +362,59 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
+export interface ApiKeijiKeiji extends Schema.SingleType {
+  collectionName: 'keijis';
+  info: {
+    singularName: 'keiji';
+    pluralName: 'keijis';
+    displayName: 'Keiji';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    legendTitle: Attribute.String;
+    legendTopSubTitle: Attribute.String;
+    legendBottomSubTitle: Attribute.String;
+    lengendDiscription: Attribute.RichText;
+    legendMemberShipGuidlinePoints1: Attribute.RichText;
+    legendMemberShipGuidlinePoints2: Attribute.RichText;
+    legendMemberShipGuidlinePoints3: Attribute.RichText;
+    coinName: Attribute.String;
+    coinInfo: Attribute.String;
+    praposalRule1: Attribute.RichText;
+    praposalRule2: Attribute.RichText;
+    praposalRule3: Attribute.RichText;
+    imageText: Attribute.RichText;
+    benifits: Attribute.String;
+    buyNowText: Attribute.String;
+    buyOnMarketPlaceText: Attribute.String;
+    imageContent: Attribute.RichText;
+    video: Attribute.Media<'videos'>;
+    projectTitle: Attribute.String;
+    brainFightersTitle: Attribute.String;
+    gameTitle: Attribute.String;
+    legendMessage: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::keiji.keiji',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::keiji.keiji',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -798,6 +851,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
+      'api::keiji.keiji': ApiKeijiKeiji;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
