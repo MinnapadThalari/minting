@@ -1170,6 +1170,8 @@ export interface ApiLegendLegend extends Schema.CollectionType {
       'oneToMany',
       'api::blog.blog'
     >;
+    profilePicLarge: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    profilePicSmall: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
