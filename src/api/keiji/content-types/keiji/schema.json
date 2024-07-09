@@ -92,7 +92,11 @@
       "type": "string"
     },
     "legendMessage": {
-      "type": "string"
+      "type": "media",
+      "allowedTypes": [
+        "videos"
+      ],
+      "multiple": false
     }
   }
 }
