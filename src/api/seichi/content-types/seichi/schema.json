@@ -75,6 +75,26 @@
       "type": "string"
     },
     "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "projectTitle": {
+      "type": "string"
+    },
+    "brainFightersTitle": {
+      "type": "string"
+    },
+    "gameTitle": {
+      "type": "string"
+    },
+    "legendMessage": {
+      "type": "string"
+    },
+    "gamingVedio": {
       "allowedTypes": [
         "videos"
       ],

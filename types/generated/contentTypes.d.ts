@@ -1437,6 +1437,11 @@ export interface ApiSeichiSeichi extends Schema.SingleType {
     buyNowText: Attribute.String;
     buyOnMarketPlaceText: Attribute.String;
     video: Attribute.Media<'videos'>;
+    projectTitle: Attribute.String;
+    brainFightersTitle: Attribute.String;
+    gameTitle: Attribute.String;
+    legendMessage: Attribute.String;
+    gamingVedio: Attribute.Media<'videos'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
