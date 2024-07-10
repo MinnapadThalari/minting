@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "footers",
   "info": {
     "singularName": "footer",
@@ -13,10 +13,17 @@
   "pluginOptions": {},
   "attributes": {
     "footer": {
-      "displayName": "footer",
       "type": "component",
       "repeatable": false,
       "component": "footer.footer"
+    },
+    "createtoearn": {
+      "type": "component",
+      "repeatable": false,
+      "component": "createtoearn.createtoearn"
+    },
+    "rights": {
+      "type": "string"
     },
     "sociallinks": {
       "type": "component",

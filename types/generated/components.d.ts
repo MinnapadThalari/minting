@@ -231,8 +231,6 @@ export interface FooterFooter extends Schema.Component {
     name: Attribute.String;
     url: Attribute.String;
     menulink: Attribute.Component<'link.link', true>;
-    Createtoearn: Attribute.Component<'createtoearn.createtoearn'>;
-    allrights: Attribute.Component<'allrights.allrights'>;
   };
 }
 

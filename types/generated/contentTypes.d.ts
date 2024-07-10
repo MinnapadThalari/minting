@@ -1012,7 +1012,7 @@ export interface ApiCrewCrew extends Schema.CollectionType {
   };
 }
 
-export interface ApiFooterFooter extends Schema.CollectionType {
+export interface ApiFooterFooter extends Schema.SingleType {
   collectionName: 'footers';
   info: {
     singularName: 'footer';
@@ -1025,6 +1025,8 @@ export interface ApiFooterFooter extends Schema.CollectionType {
   };
   attributes: {
     footer: Attribute.Component<'footer.footer'>;
+    createtoearn: Attribute.Component<'createtoearn.createtoearn'>;
+    rights: Attribute.String;
     sociallinks: Attribute.Component<'social-links.social-links'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;

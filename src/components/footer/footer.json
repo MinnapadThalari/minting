@@ -16,18 +16,6 @@
       "type": "component",
       "repeatable": true,
       "component": "link.link"
-    },
-    "Createtoearn": {
-      "displayName": "Createtoearn",
-      "type": "component",
-      "repeatable": false,
-      "component": "createtoearn.createtoearn"
-    },
-    "allrights": {
-      "displayName": "allrights",
-      "type": "component",
-      "repeatable": false,
-      "component": "allrights.allrights"
     }
   }
 }
