@@ -1422,6 +1422,11 @@ export interface ApiSatoruSatoru extends Schema.SingleType {
     buyOnMarketPlaceText: Attribute.String;
     imageContent: Attribute.RichText;
     video: Attribute.Media<'videos'>;
+    gameTitle: Attribute.String;
+    brainFightersTitle: Attribute.String;
+    projectTitle: Attribute.String;
+    legendMessage: Attribute.String;
+    gamingVedio: Attribute.Media<'videos'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
