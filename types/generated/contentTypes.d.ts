@@ -1012,6 +1012,41 @@ export interface ApiCrewCrew extends Schema.CollectionType {
   };
 }
 
+export interface ApiFooterFooter extends Schema.SingleType {
+  collectionName: 'footers';
+  info: {
+    singularName: 'footer';
+    pluralName: 'footers';
+    displayName: 'footer';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    menu: Attribute.Component<'footer.footer', true>;
+    rights: Attribute.String;
+    socials: Attribute.Component<'social-links.social-links'>;
+    logo: Attribute.Media<'images'>;
+    caption: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::footer.footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::footer.footer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiHeaderHeader extends Schema.SingleType {
   collectionName: 'headers';
   info: {
@@ -1595,6 +1630,7 @@ declare module '@strapi/types' {
       'api::career.career': ApiCareerCareer;
       'api::concept.concept': ApiConceptConcept;
       'api::crew.crew': ApiCrewCrew;
+      'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::keiji.keiji': ApiKeijiKeiji;

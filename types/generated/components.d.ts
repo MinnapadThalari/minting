@@ -225,7 +225,7 @@ export interface FaqFaq extends Schema.Component {
 export interface FooterFooter extends Schema.Component {
   collectionName: 'components_footer_footers';
   info: {
-    displayName: 'footer';
+    displayName: 'footerMenu';
     description: '';
   };
   attributes: {
