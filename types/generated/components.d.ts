@@ -200,6 +200,18 @@ export interface FaqFaq extends Schema.Component {
   };
 }
 
+export interface FooterFooter extends Schema.Component {
+  collectionName: 'components_footer_footers';
+  info: {
+    displayName: 'footer';
+  };
+  attributes: {
+    name: Attribute.String;
+    url: Attribute.String;
+    menulink: Attribute.Component<'link.link', true>;
+  };
+}
+
 export interface GetInTouchGetInTouch extends Schema.Component {
   collectionName: 'components_get_in_touch_get_in_touches';
   info: {
@@ -660,6 +672,7 @@ declare module '@strapi/types' {
       'ct-as.ct-as': CtAsCtAs;
       'details.details': DetailsDetails;
       'faq.faq': FaqFaq;
+      'footer.footer': FooterFooter;
       'get-in-touch.get-in-touch': GetInTouchGetInTouch;
       'get-in-touch.support': GetInTouchSupport;
       'head-quarters.head-quarters': HeadQuartersHeadQuarters;
