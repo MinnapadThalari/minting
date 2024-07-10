@@ -17,11 +17,6 @@
       "repeatable": true,
       "component": "footer.footer"
     },
-    "createtoearn": {
-      "type": "component",
-      "repeatable": false,
-      "component": "createtoearn.createtoearn"
-    },
     "rights": {
       "type": "string"
     },
@@ -29,6 +24,19 @@
       "type": "component",
       "repeatable": false,
       "component": "social-links.social-links"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "string"
     }
   }
 }

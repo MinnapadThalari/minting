@@ -175,10 +175,11 @@ export interface CreatetoearnCreatetoearn extends Schema.Component {
   collectionName: 'components_createtoearn_createtoearns';
   info: {
     displayName: 'Createtoearn';
+    description: '';
   };
   attributes: {
-    minnapadlogo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Description: Attribute.String;
+    logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    description: Attribute.String;
   };
 }
 

@@ -1025,9 +1025,10 @@ export interface ApiFooterFooter extends Schema.SingleType {
   };
   attributes: {
     footer: Attribute.Component<'footer.footer', true>;
-    createtoearn: Attribute.Component<'createtoearn.createtoearn'>;
     rights: Attribute.String;
     sociallinks: Attribute.Component<'social-links.social-links'>;
+    logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    description: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
