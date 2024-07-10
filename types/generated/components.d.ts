@@ -403,9 +403,11 @@ export interface LatestNewsLatestNews extends Schema.Component {
   collectionName: 'components_latest_news_latest_news';
   info: {
     displayName: 'latestNews';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
+    ctaContent: Attribute.String;
   };
 }
 
