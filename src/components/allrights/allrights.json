@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_allrights_allrights",
+  "info": {
+    "displayName": "allrights"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

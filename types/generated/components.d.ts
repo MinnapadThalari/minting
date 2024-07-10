@@ -83,6 +83,16 @@ export interface AboutUsMissionMissonCard extends Schema.Component {
   };
 }
 
+export interface AllrightsAllrights extends Schema.Component {
+  collectionName: 'components_allrights_allrights';
+  info: {
+    displayName: 'allrights';
+  };
+  attributes: {
+    title: Attribute.String;
+  };
+}
+
 export interface BlogDescBlogDescription extends Schema.Component {
   collectionName: 'components_blog_desc_blog_descriptions';
   info: {
@@ -161,6 +171,17 @@ export interface ConceptsConcepts extends Schema.Component {
   };
 }
 
+export interface CreatetoearnCreatetoearn extends Schema.Component {
+  collectionName: 'components_createtoearn_createtoearns';
+  info: {
+    displayName: 'Createtoearn';
+  };
+  attributes: {
+    minnapadlogo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    Description: Attribute.String;
+  };
+}
+
 export interface CtAsCtAs extends Schema.Component {
   collectionName: 'components_ct_as_ct_as';
   info: {
@@ -204,11 +225,14 @@ export interface FooterFooter extends Schema.Component {
   collectionName: 'components_footer_footers';
   info: {
     displayName: 'footer';
+    description: '';
   };
   attributes: {
     name: Attribute.String;
     url: Attribute.String;
     menulink: Attribute.Component<'link.link', true>;
+    Createtoearn: Attribute.Component<'createtoearn.createtoearn'>;
+    allrights: Attribute.Component<'allrights.allrights'>;
   };
 }
 
@@ -662,6 +686,7 @@ declare module '@strapi/types' {
       'about-us-hero.hero-section': AboutUsHeroHeroSection;
       'about-us-mission.missions': AboutUsMissionMissions;
       'about-us-mission.misson-card': AboutUsMissionMissonCard;
+      'allrights.allrights': AllrightsAllrights;
       'blog-desc.blog-description': BlogDescBlogDescription;
       'blog-desc.blog-media': BlogDescBlogMedia;
       'career-benifits.career-benifits': CareerBenifitsCareerBenifits;
@@ -669,6 +694,7 @@ declare module '@strapi/types' {
       'career-opertunities.career-opertunities': CareerOpertunitiesCareerOpertunities;
       'community-collabs.collabs': CommunityCollabsCollabs;
       'concepts.concepts': ConceptsConcepts;
+      'createtoearn.createtoearn': CreatetoearnCreatetoearn;
       'ct-as.ct-as': CtAsCtAs;
       'details.details': DetailsDetails;
       'faq.faq': FaqFaq;

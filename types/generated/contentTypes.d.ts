@@ -1018,12 +1018,14 @@ export interface ApiFooterFooter extends Schema.CollectionType {
     singularName: 'footer';
     pluralName: 'footers';
     displayName: 'footer';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     footer: Attribute.Component<'footer.footer'>;
+    sociallinks: Attribute.Component<'social-links.social-links'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

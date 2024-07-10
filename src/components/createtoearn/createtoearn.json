@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_createtoearn_createtoearns",
+  "info": {
+    "displayName": "Createtoearn"
+  },
+  "options": {},
+  "attributes": {
+    "minnapadlogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Description": {
+      "type": "string"
+    }
+  }
+}
