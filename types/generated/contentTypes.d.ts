@@ -1024,7 +1024,7 @@ export interface ApiFooterFooter extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    footer: Attribute.Component<'footer.footer'>;
+    footer: Attribute.Component<'footer.footer', true>;
     createtoearn: Attribute.Component<'createtoearn.createtoearn'>;
     rights: Attribute.String;
     sociallinks: Attribute.Component<'social-links.social-links'>;

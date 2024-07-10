@@ -14,7 +14,7 @@
   "attributes": {
     "footer": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "footer.footer"
     },
     "createtoearn": {
