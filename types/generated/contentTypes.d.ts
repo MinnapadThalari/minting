@@ -1012,7 +1012,7 @@ export interface ApiCrewCrew extends Schema.CollectionType {
   };
 }
 
-export interface ApiFooterFooter extends Schema.SingleType {
+export interface ApiFooterFooter extends Schema.CollectionType {
   collectionName: 'footers';
   info: {
     singularName: 'footer';
@@ -1024,11 +1024,11 @@ export interface ApiFooterFooter extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    menu: Attribute.Component<'footer.footer', true>;
+    menu: Attribute.Component<'nav-submenu.menu', true>;
     rights: Attribute.String;
-    socials: Attribute.Component<'social-links.social-links'>;
-    logo: Attribute.Media<'images'>;
-    caption: Attribute.String;
+    content: Attribute.String;
+    logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    sociallinks: Attribute.Component<'social-links.social-links', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

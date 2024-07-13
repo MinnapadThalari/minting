@@ -502,10 +502,12 @@ export interface NavSubmenuMenu extends Schema.Component {
   info: {
     displayName: 'menu';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
-    title: Attribute.String;
+    name: Attribute.String;
     menuLink: Attribute.Component<'link.link', true>;
+    url: Attribute.String;
   };
 }
 

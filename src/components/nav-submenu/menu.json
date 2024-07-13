@@ -2,17 +2,21 @@
   "collectionName": "components_nav_submenu_menus",
   "info": {
     "displayName": "menu",
-    "icon": "bulletList"
+    "icon": "bulletList",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     },
     "menuLink": {
       "type": "component",
       "repeatable": true,
       "component": "link.link"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
